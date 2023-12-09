@@ -1,13 +1,15 @@
-import PageHeader from "./components/page_header.js";
-import Activities from "./components/activities.js";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import MainPage from "./MainPage.js"
+import ActivitiesContent from "./components/activities_content/ActivitiesContent.js"
 function App() {
   return (
-    <div className="px-[200px] py-[56px]">
-      <PageHeader/>
-      <Activities/>
-  
-    </div>
-  );
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<MainPage/>}/>
+          <Route path="/:act" element={<ActivitiesContent/>} component={ActivitiesContent} />
+      </Routes>
+      </BrowserRouter>
+ );
 }
 
 export default App;

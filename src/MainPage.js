@@ -1,0 +1,12 @@
+import PageHeader from "./components/main_page_components/page_header.js";
+import Activities from "./components/main_page_components/activities.js";
+export default function MainPage() {
+  return(
+    <div className="px-[250px] py-[56px]">
+      <PageHeader/>
+      <div className="w-[100%] h-[2px] bg-zinc-600 mt-4" />
+      <Activities />
+    </div>
+  );
+  
+}
