@@ -1,4 +1,4 @@
-export default function Ensayo(){
+function Ensayo(){
 	return(
 		<div>
 			<p className="mt-4">
@@ -74,3 +74,15 @@ export default function Ensayo(){
 		</div>
 	);
 }
+
+function ReferenciasEnsayo(){
+	return(
+		<div className="flex flex-col text-gray-300 gap-4 mt-2">
+			<p>Blanco U. (2023). 5 advertencias sobre la inteligencia artifical que han hecho los expertos [Archivo de texto]. Recuperado de: <a href="https://cnnespanol.cnn.com/2023/05/08/5-advertencias-inteligencia-artificial-han-hecho-expertos-orix/">https://cnnespanol.cnn.com/2023/05/08/5-advertencias-inteligencia-artificial-han-hecho-expertos-orix/</a></p>
+			<p>S. A. (2023). Los riesgos de la inteligencia artificial [Archivo de texto]. Recuperado de: <a href="https://elpais.com/opinion/2023-04-24/los-riesgos-de-la-inteligencia-artificial.html">https://elpais.com/opinion/2023-04-24/los-riesgos-de-la-inteligencia-artificial.html</a></p>
+			<p>The Guardian. (2022). La inteligencia artificial está cambiando el mundo, pero ¿para bien o para mal? The Guardian.</p>
+		</div>
+	);
+}
+
+export {Ensayo, ReferenciasEnsayo}

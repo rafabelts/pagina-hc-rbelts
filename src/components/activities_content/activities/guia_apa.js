@@ -1,4 +1,4 @@
-export default function GuiaAPA(){
+function GuiaAPA(){
 	const referencias={
 		ref1: {
 			title: "Referencia de libro o monografía de un autor:",
@@ -86,3 +86,14 @@ export default function GuiaAPA(){
 
 	);
 }
+function ReferenciasAPA(){
+	return(
+		<div className="flex flex-col text-gray-300 gap-4 mt-2">
+			<p>"Guía: Normas APA Séptima 7.ª Edición 2020" (2021). <em>Recursos bibliográficos</em>. 11. <a href="https://ciencia.lasalle.edu.co/recursos_bibliograficos/11">https://ciencia.lasalle.edu.co/recursos_bibliograficos/11</a></p>
+			<p>Moreno, D. & Carrillo, J. (2019). <em>Normas APA 7.a edición: Guía de citación y referenciación </em> [PDF]. Recuperado de:  <a href="https://www.revista.unam.mx/wp-content/uploads/3_Normas-APA-7-ed-2019-11-6.pdf">https://www.revista.unam.mx/wp-content/uploads/3_Normas-APA-7-ed-2019-11-6.pdf</a></p>
+			<p>S.A. (s.f). <em>Guía Normas APA: 7ª edición</em> [PDF]. Recuperado de: <a href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf">https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf</a> </p>
+		</div>
+	);
+}
+
+export {GuiaAPA, ReferenciasAPA};

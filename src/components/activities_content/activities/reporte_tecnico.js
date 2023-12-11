@@ -1,4 +1,4 @@
-export default function ReporteTecnico(){
+function ReporteTecnico(){
 	return(
 		<div className="flex flex-col">
 			<h3 className="text-xl font-bold text-[#FAFAFA]">Introducción</h3>
@@ -89,3 +89,16 @@ export default function ReporteTecnico(){
 		</div>
 	);
 }
+
+function ReferenciasReporte(){
+	return(
+		<div className="flex flex-col text-gray-300 gap-4 mt-2">
+			<p>Activition. (s.f.). Requisitos del sistema de PC para Call of Duty: Warzone [Archivo de texto]. Recuperado de: <a href="https://support.activision.com/es/warzone-2/articles/pc-system-requirements-for-warzone-2">https://support.activision.com/es/warzone-2/articles/pc-system-requirements-for-warzone-2</a></p>
+			<p>
+				González S. (s.f.). Call of Duty: Warzone [Archivo de texto]. Recuperado de: <a href="https://vandal.elespanol.com/analisis/ps4/call-of-duty-warzone/82925#p-73">https://vandal.elespanol.com/analisis/ps4/call-of-duty-warzone/82925#p-73</a>
+			</p>
+		</div>
+	);
+}
+
+export {ReporteTecnico, ReferenciasReporte};

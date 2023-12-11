@@ -9,7 +9,7 @@ function ElementosCard({title, content, src}){
 	);
 }
 
-export default function ElementosLenguaje() {
+function ElementosLenguaje() {
 	const elements = {
 		element1: {
 			title: "Fonología",
@@ -60,3 +60,23 @@ export default function ElementosLenguaje() {
 		</div>
 	)	
 }
+
+function ReferenciasElementos(){
+	return(
+		<div className="flex flex-col text-gray-300 gap-4 mt-2">
+			<p>Coelho F. (s.f.). Morfema [Archivo de texto]. Recuperado de <a href="https://www.diccionariodedudas.com/morfema/">https://www.dicionariodedudas.com/morfema/</a></p>
+			<p>Coelho F. (s.f.). Lexema [Archivo de texto]. Recuperado de <a href="https://www.diccionariodedudas.com/lexema/">https://www.diccionariodedudas.com/lexema/</a></p>
+			<p>S. A. (s.f.). Semiótica [Archivo de texto]. Recuperado de <a href="https://www.filosofia.org/enc/ros/se4.htm">https://www.filosofia.org/enc/ros/se4.htm</a></p>
+			<p>S. A. (s.f.). Semántica [Archivo de texto]. Recuperado de <a href="https://www.concepto.de/semantica/">https://www.concepto.de/semantica/</a></p>
+			<p>S. A. (s.f.). Pragmático, ca. Real Academia Española [Archivo de texto]. Recuperado de <a href="https://dle.rae.es/pragm%C3%A1tico">https://dle.rae.es/pragm%C3%A1tico</a></p>
+			<p>S. A. (s.f.). ¿Qué es la sintaxis y ejemplos? [Archivo de texto]. Recuperado de <a href="https://legsa.com.mx/pyru/que-es-la-sintaxis-y-ejemplos">https://legsa.com.mx/pyru/que-es-la-sintaxis-y-ejemplos</a></p>
+			<p>S. A. (s.f.). Morfología. Universidad Computense Madrid [Archivo de texto]. Recuperado de <a href="https://www.ucm.es/plataformaele/morfologia">https://www.ucm.es/plataformaele/morfologia</a></p>
+			<p>S. A. (s.f.). Fonología. Real Academia Español [Archivo de texto]. Recuperado de <a href="https://dle.rae.es/fonolog%C3%ADa">https://dle.rae.es/fonolog%C3%ADa</a></p>
+
+		</div>
+	);
+	
+}
+
+export {ElementosLenguaje, ReferenciasElementos};
+

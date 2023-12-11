@@ -1,6 +1,6 @@
 import { FaAngleLeft } from "react-icons/fa6";
 import {NavLink} from "react-router-dom";
-export default function ActivitiesContentBluePrint({title, date, content}) {
+export default function ActivitiesContentBluePrint({title, date, content, needReference, references}) {
 	return(
 		<div className="px-[250px] py-[56px]">
 			<NavLink to="/">
@@ -15,8 +15,19 @@ export default function ActivitiesContentBluePrint({title, date, content}) {
 				{content}
 			</div>
 
-			<div className="w-[100%] h-[1px] bg-zinc-600 mt-12 mb-6" />	
-			<h2 className="text-xl text-gray-300 font-bold">Referencias:</h2>
+
+			{
+				needReference ? (
+					<div className="mt-10 flex flex-col">
+						<div className="w-[100%] h-[1px] bg-zinc-500 mt-1 mb-6" />	     
+						<h2 className="text-xl text-gray-300 font-bold">Referencias:</h2>
+						{references}
+					</div>
+
+				) : null	
+
+			}
+			
 		</div>
 	);
 	

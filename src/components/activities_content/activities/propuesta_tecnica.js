@@ -58,7 +58,7 @@ function OthersTable(){
 	
 	);
 }
-export default function PropuestaTecnica() {
+function PropuestaTecnica() {
 	return(
 		<div>
 			<h3 className="text-xl font-bold text-[#FAFAFA]">Introducción</h3>
@@ -131,3 +131,18 @@ export default function PropuestaTecnica() {
 		</div>
 	);
 }
+
+function ReferenciasPropuesta(){
+	return(
+		<div className="flex flex-col text-gray-300 gap-4 mt-2">
+			<p>Burek J. (4 de Agosto 2023).How to Build a PC: The Ultimate Beginner's Guide [Archivo de texto]. Recuperado de: <a href="https://www.pcmag.com/how-to/how-to-build-a-pc-the-ultimate-beginners-guide">https://www.pcmag.com/how-to/how-to-build-a-pc-the-ultimate-beginners-guide</a></p>
+			
+			<p>Intel. (s. f.).How to Build a Gaming PC - Intel [Archivo de texto]. Recuperado de: <a href="https://www.intel.com/content/www/us/en/gaming/resources/how-to-build-a-gaming-pc.html">https://www.intel.com/content/www/us/en/gaming/resources/how-to-build-a-gaming-pc.html</a></p>
+
+			<p>Smith S. L & Andronico M. (2017).Gaming Desktop Buying Guide: 7 Things You Need to Know [Archivo de texto]. Recuperado de: <a href="https://www.tomsguide.com/us/how-to-buy-gaming-pc,review-3981.html">https://www.tomsguide.com/us/how-to-buy-gaming-pc,review-3981.html</a></p>
+
+		</div>
+	);
+}
+
+export {PropuestaTecnica, ReferenciasPropuesta} 

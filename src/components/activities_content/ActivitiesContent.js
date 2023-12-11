@@ -8,7 +8,8 @@ export default function ActivitiesContent() {
   return <ActivitiesContentBluePrint
     title = {activities_content[act].title}
     date = {activities_content[act].date}
-    content={activities_content[act].content} />;
-
+    content={activities_content[act].content} 
+    needReference = {activities_content[act].needReference}
+    references={activities_content[act].references}/>;
 }
 
